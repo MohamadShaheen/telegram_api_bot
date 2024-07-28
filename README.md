@@ -30,8 +30,8 @@ Create a `.env` file in the root directory and set the following variables:
 **Clone the Repository:**
 
 ```shell
-git clone https://github.com/yourusername/telegram-bot.git
-cd telegram-bot
+git clone https://github.com/MohamadShaheen/telegram_api_bot.git
+cd telegram_api_bot
 ```
 
 **Install Dependencies:**
@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 **Run the FastAPI Server:**
 
-Ensure your [FastAPI server](link) is running and accessible. 
+Ensure your [FastAPI server](https://github.com/MohamadShaheen/telegram_api_server.git) is running and accessible. Follow the instructions in the `README.md` file that is provided in the server repository. 
 
 **Start the Bot:**
 
@@ -59,4 +59,3 @@ python bot.py
 
 - Ensure your `.env` file is correctly set up with the API credentials.
 - Verify that the FastAPI server is running and accessible.
-- Check for any errors in the logs and debug accordingly.
