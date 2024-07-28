@@ -6,6 +6,7 @@ import os
 load_dotenv()
 api_id = os.getenv('API_ID')
 api_hash = os.getenv('API_HASH')
+bot_token = os.getenv('BOT_TOKEN')
 
 if api_id is None or api_hash is None:
     print('API ID and hash are not set correctly. Refer to README.md for further information.')
@@ -17,7 +18,7 @@ except ValueError:
     print('API ID is not an integer. Refer to README.md for more information.')
     exit(1)
 
-client = TelegramClient('session_bot', api_id=api_id, api_hash=api_hash).start(bot_token='7355319412:AAGD1sw_HDA3F6Ht26MhMdln9S2eefJVwoY')
+client = TelegramClient('session_bot', api_id=api_id, api_hash=api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern='/start'))
 async def start(event):
